@@ -1,4 +1,50 @@
-/* color palette from <https://github.com/vuejs/theme> */
+/* dbd20rank palette */
+:root {
+  --vt-c-black: #0F0F0F;
+
+  --vt-c-white: #FFFFFF;
+  --vt-c-white-soft: #F2F2F2;
+
+  --vt-c-gray-light-theme: rgba(142, 142, 147);
+  --vt-c-gray-dark-theme: rgba(152, 152, 157);
+
+  --vt-c-red-light-theme: rgba(255, 59, 48);
+  --vt-c-red-dark-theme: rgba(255, 69, 58);
+
+  --vt-c-orange-light-theme: rgba(255, 149, 0);
+  --vt-c-orange-dark-theme: rgba(255, 159, 10);
+
+  --vt-c-yellow-light-theme: rgba(255, 204, 0);
+  --vt-c-yellow-dark-theme: rgba(255, 214, 10);
+
+  --vt-c-green-light-theme: rgba(40, 205, 65);
+  --vt-c-green-dark-theme: rgba(50, 215, 75);
+
+  --vt-c-mint-light-theme: rgba(0, 199, 190);
+  --vt-c-mint-dark-theme: rgba(102, 212, 207);
+
+  --vt-c-teal-light-theme: rgba(89, 173, 196);
+  --vt-c-teal-dark-theme: rgba(106, 196, 220);
+
+  --vt-c-cyan-light-theme: rgba(85, 190, 240);
+  --vt-c-cyan-dark-theme: rgba(90, 200, 245);
+
+  --vt-c-blue-light-theme: rgba(0, 122, 255);
+  --vt-c-blue-dark-theme: rgba(10, 132, 245);
+
+  --vt-c-indigo-light-theme: rgba(88, 86, 214);
+  --vt-c-indigo-dark-theme: rgba(94, 92, 230);
+
+  --vt-c-purple-light-theme: rgba(175, 82, 222);
+  --vt-c-purple-dark-theme: rgba(191, 90, 242);
+
+  --vt-c-pink-light-theme: rgba(255, 45, 85);
+  --vt-c-pink-dark-theme: rgba(255, 55, 95);
+
+  --vt-c-brown-light-theme: rgba(162, 132, 94);
+  --vt-c-brown-dark-theme: rgba(172, 142, 104);
+}
+
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
@@ -34,6 +80,20 @@
   --color-text: var(--vt-c-text-light-1);
 
   --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: var(--vt-c-white);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-black);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
