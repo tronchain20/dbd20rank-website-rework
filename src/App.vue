@@ -9,6 +9,8 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav>
         <RouterLink to="/">Main page</RouterLink>
         <RouterLink to="/market">Market page</RouterLink>
+        <RouterLink to="/policy">Policy page</RouterLink>
+        <RouterLink to="/personal">Profile page</RouterLink>
       </nav>
     </div>
   </header>
@@ -31,15 +33,7 @@ nav {
   width: 100%;
   font-size: 16px;
   text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+  margin-top: 4rem;
 }
 
 nav a {

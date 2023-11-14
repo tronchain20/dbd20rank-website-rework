@@ -13,6 +13,16 @@ const router = createRouter({
       path: '/market',
       name: 'market',
       component: () => import('../views/MarketPageView.vue')
+    },
+    {
+      path: '/policy',
+      name: 'policy',
+      component: () => import('../views/PolicyPageView.vue')
+    },
+    {
+      path: '/personal',
+      name: 'personal',
+      component: () => import('../views/ProfilePageView.vue')
     }
     // route level code-splitting
     // this generates a separate chunk (About.[hash].js) for this route
